@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Displays "To infinity and beyond" indefinitely and reacts to SIGTERM
+# Displays "To infinity and beyond" indefinitely and handles SIGTERM
 
-trap 'echo "OK"' SIGTERM
+trap "echo OK" SIGTERM
 
 while true
 do
